@@ -31,6 +31,7 @@ class GithubForksDiff:
                 break
             elif len(resp.json()) == 2:
                 print("LIMITE DO GITHUB EXCEDIDO")
+                break
             else:
                 data.append(resp.json())
                 page += 1
